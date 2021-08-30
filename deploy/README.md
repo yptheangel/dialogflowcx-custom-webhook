@@ -3,9 +3,9 @@ Repo for deploying language detection on fastapi wrapped in a docker, build on c
 
 # Installation steps
 ## Deploy with cloud function
-- Cloud function run with a fix main.py file 
+- Cloud function run with a fixed `main.py` file 
 - If changes are needed please edit from there
-
+Go to  [cloud_function](cloud_function) folder and "handler" is the main function
 ```bash
 gcloud functions deploy handler --runtime python37 --trigger-http --memory 2048 --region asia-southeast1
 ```
@@ -15,18 +15,19 @@ gcloud functions deploy handler --runtime python37 --trigger-http --memory 2048 
 ```bash
 git clone
 ```
+2) Go to [clooud_run](cloud_run/docker) folder 
 
-2) Build image from gcloud
+3) Build image from gcloud
 ```bash
 gcloud builds submit --tag asia.gcr.io/yourgcpproject/yourimagename
 ```
 
-3) Build to cloud run and set limit to 2G for tensorflow
+4) Build to cloud run and set limit to 2G for tensorflow
 ```bash
 gcloud run deploy --image asia.gcr.io/yourgcpproject/yourimagename --memory 2G
 ```
 
-4) Test build
+5) Test build
 ```bash
 gcloud auth print-identity-token > test/identity.txt # Store token locally
 cd test/
