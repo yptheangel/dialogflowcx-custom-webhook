@@ -8,4 +8,10 @@ This repo will be useful for users who want to productionize their models not li
 3. Toxic comments classification
 4. Spam classification
 
+## Get started
+1. Go to [deploy](deploy) folder to see the guide on how to setup your backend endpoint, you can choose either Cloud Function or Cloud Run(containerized)
+2. Go to [integration](integration) folder how to include your custom webhook to your dialogflow
 
+### What you need
+1. Google Cloud SDK
+2. Dialogflow CX setup
