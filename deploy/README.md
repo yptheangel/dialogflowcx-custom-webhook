@@ -16,7 +16,9 @@ gcloud functions deploy handler --runtime python37 --trigger-http --memory 2048 
 git clone thisrepository
 ```
 2) Go to [cloud_run](cloud_run/docker) folder 
-`cd dialogflowcx-custom-webhook/deploy/cloud_run`
+```bash
+cd dialogflowcx-custom-webhook/deploy/cloud_run/docker`
+```
 
 3) Build image from gcloud
 ```bash
