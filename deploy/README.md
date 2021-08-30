@@ -17,7 +17,7 @@ git clone thisrepository
 ```
 2) Go to [cloud_run](cloud_run/docker) folder 
 ```bash
-cd dialogflowcx-custom-webhook/deploy/cloud_run/docker`
+cd dialogflowcx-custom-webhook/deploy/cloud_run/docker
 ```
 
 3) Build image from gcloud
