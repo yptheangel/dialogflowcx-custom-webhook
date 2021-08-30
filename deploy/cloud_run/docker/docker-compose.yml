@@ -1,0 +1,11 @@
+version: '2.3'
+
+services:
+  language_detector:
+    image: lang_det:1.0
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - TZ=Asia/Kuala_Lumpur
+    container_name: lang_det
