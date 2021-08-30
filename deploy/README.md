@@ -18,12 +18,12 @@ git clone
 
 2) Build image from gcloud
 ```bash
-gcloud builds submit --tag asia.gcr.io/dialogflow-ex/lang-det
+gcloud builds submit --tag asia.gcr.io/yourgcpproject/yourimagename
 ```
 
 3) Build to cloud run and set limit to 2G for tensorflow
 ```bash
-gcloud run deploy --image asia.gcr.io/dialogflow-ex/lang-det --memory 2G
+gcloud run deploy --image asia.gcr.io/yourgcpproject/yourimagename --memory 2G
 ```
 
 4) Test build
